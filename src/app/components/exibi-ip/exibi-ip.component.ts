@@ -18,8 +18,6 @@ export class ExibiIpComponent implements OnInit {
   obterIpAddress(){
      this.http.get("http://api.ipify.org/?format=json").subscribe((resposta:any) => {
        this.ipAddress = resposta.ip
-       //return resposta
      });
   }
-
 }
